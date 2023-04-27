@@ -7,7 +7,7 @@ apt install -y software-properties-common build-essential zlib1g-dev libncurses5
 			   libbz2-dev libsqlite3-dev
 
 # Install database using by mlflow
-#apt install -y postgresql postgresql-contrib postgresql-server-dev-all
+apt install -y sqlite3 libsqlite3-dev
 
 # Install python 3.10.5
 wget https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz
