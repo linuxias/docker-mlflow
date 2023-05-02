@@ -22,4 +22,4 @@ COPY . ${APP_PATH}
 RUN apt update
 RUN ./build.sh
 ENTRYPOINT ["sh", "-c"]
-CMD ["mlflow server --host=0.0.0.0"]
+CMD ["mlflow server --backend-store-uri sqlite:////root/example.db --host 0.0.0.0"]
